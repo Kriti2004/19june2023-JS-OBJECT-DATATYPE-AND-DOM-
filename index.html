@@ -4,8 +4,50 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+
+        </style>
+        <script src="./js/script.js"></script>
+        <script>
+
+        </script>
     </head>
     <body>
         
+
+        <script>
+            // Lets create a JS object
+            var student1={
+                // 1. Property:value,
+                fname:'Agyasha',
+                lname:'Bharti',
+                age:19,
+                salary:20000,
+                address:"Kashipur",
+                // Function Defination
+                getMyFullAddress(){
+                    console.log("Hello "+this.lname+" "+ this.address);
+                    return this.address+ " " +this.salary+ " " +this.fname
+                }
+            }; // student1 is js object
+            let student2="kriti kiran"; // student2 is a string
+            const student3=40; // student3 is a number
+            var student4={
+                // 2. Property:value,
+                fname:'Manisha',
+                lname:'Rajput',
+                age:21,
+                salary:10000,
+                address:"Samastipur",
+                getAddress(){
+                    return this.address
+                }
+            }
+            // Hown to access these information from js object
+            console.log(student1.age+" "+student1.fname +" "+student1.lname);
+            console.log(student1.getMyFullAddress());
+            console.log(student4.fname);
+            console.log(student4.getAddress());
+        </script>
     </body>
 </html>
